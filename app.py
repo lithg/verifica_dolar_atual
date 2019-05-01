@@ -22,7 +22,7 @@ def verificaDolar():
         lista_valores.append(valor.text)
 
     dolar = lista_valores[2].split('R$')
-    dolar = int(dolar[1].replace(',', '.'))
+    dolar = float(dolar[1].replace(',', '.'))
 
     print(dolar)
 
